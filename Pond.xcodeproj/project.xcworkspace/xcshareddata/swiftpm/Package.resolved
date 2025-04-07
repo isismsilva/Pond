@@ -1,0 +1,33 @@
+{
+  "originHash" : "9c14c4c32985ebdb65fd7176e0b4bf247b6ebcfb6b82b535e6a85c9b0fb0d20b",
+  "pins" : [
+    {
+      "identity" : "phonenumberkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/marmelroy/PhoneNumberKit.git",
+      "state" : {
+        "revision" : "c107075aa8d394be7aced273a46e944afe8b321b",
+        "version" : "3.8.0"
+      }
+    },
+    {
+      "identity" : "playbook-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/powerhome/playbook-swift",
+      "state" : {
+        "revision" : "87286d9729aa76185717fa374d838c55ed7b20e7",
+        "version" : "6.9.0"
+      }
+    },
+    {
+      "identity" : "power-fonts",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:powerhome/power-fonts.git",
+      "state" : {
+        "revision" : "5e79e53cce76378277ce4c9778dfac56daed9e9d",
+        "version" : "0.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
