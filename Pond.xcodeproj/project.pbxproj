@@ -7,20 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7B986B92DA5652800BE6CE0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B986AE2DA5652800BE6CE0 /* Preview Assets.xcassets */; };
+		E7B986BA2DA5652800BE6CE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B986B02DA5652800BE6CE0 /* Assets.xcassets */; };
+		E7B986BB2DA5652800BE6CE0 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B986B12DA5652800BE6CE0 /* ConfirmationView.swift */; };
+		E7B986BC2DA5652800BE6CE0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B986B22DA5652800BE6CE0 /* ContentView.swift */; };
+		E7B986BE2DA5652800BE6CE0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B986B42DA5652800BE6CE0 /* LoginView.swift */; };
+		E7B986BF2DA5652800BE6CE0 /* PondApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B986B52DA5652800BE6CE0 /* PondApp.swift */; };
+		E7B986C02DA5652800BE6CE0 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B986B62DA5652800BE6CE0 /* QuizView.swift */; };
+		E7B986C12DA5652800BE6CE0 /* RoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B986B72DA5652800BE6CE0 /* RoleView.swift */; };
+		E7B986C42DA5654600BE6CE0 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B986C32DA5654600BE6CE0 /* UserView.swift */; };
+		E7B986C62DA5698E00BE6CE0 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B986C52DA5698E00BE6CE0 /* BadgeView.swift */; };
+		E7B986C82DA56A1700BE6CE0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B986C72DA56A1700BE6CE0 /* DashboardView.swift */; };
 		F9EBD42B2DA465B0008059CA /* Playbook in Frameworks */ = {isa = PBXBuildFile; productRef = F9EBD42A2DA465B0008059CA /* Playbook */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7B986AE2DA5652800BE6CE0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7B986B02DA5652800BE6CE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7B986B12DA5652800BE6CE0 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		E7B986B22DA5652800BE6CE0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E7B986B42DA5652800BE6CE0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E7B986B52DA5652800BE6CE0 /* PondApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondApp.swift; sourceTree = "<group>"; };
+		E7B986B62DA5652800BE6CE0 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		E7B986B72DA5652800BE6CE0 /* RoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleView.swift; sourceTree = "<group>"; };
+		E7B986C32DA5654600BE6CE0 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		E7B986C52DA5698E00BE6CE0 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		E7B986C72DA56A1700BE6CE0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		F9EBD4072DA45FB8008059CA /* Pond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pond.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F9EBD4092DA45FB8008059CA /* Pond */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Pond;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F9EBD4042DA45FB8008059CA /* Frameworks */ = {
@@ -34,10 +48,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7B986AF2DA5652800BE6CE0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E7B986AE2DA5652800BE6CE0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E7B986B82DA5652800BE6CE0 /* Pond */ = {
+			isa = PBXGroup;
+			children = (
+				E7B986AF2DA5652800BE6CE0 /* Preview Content */,
+				E7B986B02DA5652800BE6CE0 /* Assets.xcassets */,
+				E7B986B12DA5652800BE6CE0 /* ConfirmationView.swift */,
+				E7B986B22DA5652800BE6CE0 /* ContentView.swift */,
+				E7B986B42DA5652800BE6CE0 /* LoginView.swift */,
+				E7B986B52DA5652800BE6CE0 /* PondApp.swift */,
+				E7B986B62DA5652800BE6CE0 /* QuizView.swift */,
+				E7B986B72DA5652800BE6CE0 /* RoleView.swift */,
+				E7B986C22DA5652B00BE6CE0 /* Dashboard View */,
+			);
+			path = Pond;
+			sourceTree = "<group>";
+		};
+		E7B986C22DA5652B00BE6CE0 /* Dashboard View */ = {
+			isa = PBXGroup;
+			children = (
+				E7B986C72DA56A1700BE6CE0 /* DashboardView.swift */,
+				E7B986C32DA5654600BE6CE0 /* UserView.swift */,
+				E7B986C52DA5698E00BE6CE0 /* BadgeView.swift */,
+			);
+			path = "Dashboard View";
+			sourceTree = "<group>";
+		};
 		F9EBD3FE2DA45FB8008059CA = {
 			isa = PBXGroup;
 			children = (
-				F9EBD4092DA45FB8008059CA /* Pond */,
+				E7B986B82DA5652800BE6CE0 /* Pond */,
 				F9EBD4082DA45FB8008059CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,9 +112,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				F9EBD4092DA45FB8008059CA /* Pond */,
 			);
 			name = Pond;
 			packageProductDependencies = (
@@ -118,6 +163,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B986B92DA5652800BE6CE0 /* Preview Assets.xcassets in Resources */,
+				E7B986BA2DA5652800BE6CE0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +175,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B986BB2DA5652800BE6CE0 /* ConfirmationView.swift in Sources */,
+				E7B986BC2DA5652800BE6CE0 /* ContentView.swift in Sources */,
+				E7B986C42DA5654600BE6CE0 /* UserView.swift in Sources */,
+				E7B986BE2DA5652800BE6CE0 /* LoginView.swift in Sources */,
+				E7B986C82DA56A1700BE6CE0 /* DashboardView.swift in Sources */,
+				E7B986BF2DA5652800BE6CE0 /* PondApp.swift in Sources */,
+				E7B986C62DA5698E00BE6CE0 /* BadgeView.swift in Sources */,
+				E7B986C02DA5652800BE6CE0 /* QuizView.swift in Sources */,
+				E7B986C12DA5652800BE6CE0 /* RoleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
