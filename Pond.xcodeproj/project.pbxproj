@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7B9871B2DA56F5500BE6CE0 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B987172DA56F5500BE6CE0 /* BadgeView.swift */; };
+		E7B9871C2DA56F5500BE6CE0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B987182DA56F5500BE6CE0 /* DashboardView.swift */; };
+		E7B9871D2DA56F5500BE6CE0 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B987192DA56F5500BE6CE0 /* UserView.swift */; };
 		F9EBD42B2DA465B0008059CA /* Playbook in Frameworks */ = {isa = PBXBuildFile; productRef = F9EBD42A2DA465B0008059CA /* Playbook */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7B987172DA56F5500BE6CE0 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
+		E7B987182DA56F5500BE6CE0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		E7B987192DA56F5500BE6CE0 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		F9EBD4072DA45FB8008059CA /* Pond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pond.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		E7B987142DA56F4500BE6CE0 /* Role View */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Role View";
+			sourceTree = "<group>";
+		};
 		F9EBD4092DA45FB8008059CA /* Pond */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Pond;
@@ -34,10 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7B9871A2DA56F5500BE6CE0 /* Dashboard View */ = {
+			isa = PBXGroup;
+			children = (
+				E7B987182DA56F5500BE6CE0 /* DashboardView.swift */,
+				E7B987192DA56F5500BE6CE0 /* UserView.swift */,
+				E7B987172DA56F5500BE6CE0 /* BadgeView.swift */,
+			);
+			path = "Dashboard View";
+			sourceTree = "<group>";
+		};
 		F9EBD3FE2DA45FB8008059CA = {
 			isa = PBXGroup;
 			children = (
 				F9EBD4092DA45FB8008059CA /* Pond */,
+				E7B987142DA56F4500BE6CE0 /* Role View */,
+				E7B9871A2DA56F5500BE6CE0 /* Dashboard View */,
 				F9EBD4082DA45FB8008059CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +89,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				E7B987142DA56F4500BE6CE0 /* Role View */,
 				F9EBD4092DA45FB8008059CA /* Pond */,
 			);
 			name = Pond;
@@ -128,6 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B9871B2DA56F5500BE6CE0 /* BadgeView.swift in Sources */,
+				E7B9871C2DA56F5500BE6CE0 /* DashboardView.swift in Sources */,
+				E7B9871D2DA56F5500BE6CE0 /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
