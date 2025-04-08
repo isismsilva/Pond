@@ -21,7 +21,7 @@ extension LoginView {
   var loginView: some View {
     ZStack {
       Color.background(.default).ignoresSafeArea()
-      VStack(spacing: Spacing.small) {
+      VStack(spacing: Spacing.large) {
         logoView
         inputView
         buttonView
@@ -32,7 +32,7 @@ extension LoginView {
   }
 
   var inputView: some View {
-    VStack(spacing: Spacing.xxSmall) {
+    VStack(spacing: -10) {
       usernameView
       passwordView
     }
@@ -44,7 +44,6 @@ extension LoginView {
       Text("Knowledge Approaches Integrated Into \n Rebuttals and Effective Negotiations")
         .pbFont(.caption)
     }
-    .padding(.bottom)
   }
 
   var usernameView: some View {
@@ -53,15 +52,18 @@ extension LoginView {
   var passwordView: some View {
     PBTextInput("", text: $password, placeholder: "Password", style: .default, keyboardType: .asciiCapableNumberPad)
   }
+
   var buttonView: some View {
     PBButton(fullWidth: true, variant: .primary, size: .large, shape: .primary, title: "Submit") {
     }
   }
+
   var forgotPasswordView: some View {
     Link("Forgot Password?", destination: URL(string: "powerhrg.com")!)
-      .pbFont(.detail(true), color: .white)
+      .pbFont(.detail(true), color: .gray)
 
   }
+
 }
 #Preview {
   registerFonts()
