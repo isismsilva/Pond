@@ -8,42 +8,48 @@
 import SwiftUI
 import Playbook
 
-struct QuizView: View {
+struct QuizView<ViewModel: QuizViewModelProtocol>: View {
   @State private var selectOption1: String = "Choose an option"
   @State private var selectOption2: String = "Choose an option"
+  @State var viewModel: ViewModel
+
   var body: some View {
     VStack(alignment: .leading) {
-      HeaderView(
-        title: "Ready to level up? Your mentor quest starts here!",
-        subtitle: "We’re excited to see all you accomplish! Next, let’s gather a few details about your areasof growth to ensure we find the perfect mentor for you."
-      )
+      HeaderView(title: viewModel.title, subtitle: viewModel.subtitle)
 
       ScrollView {
         HStack(spacing: Spacing.large) {
-          PBSelect(title: "How do you usually learn best?", options: options, style: .default, selected: $selectOption1) { selected in
-            selectOption1 = selected
+          PBSelect(
+            title: viewModel.selectTitle1,
+            options: viewModel.selectOptions1,
+            style: .default,
+            selected: $selectOption1) { selected in
+              selectOption1 = selected
           }
 
-          PBSelect(title: "How do you usually learn best?", options: options, style: .default, selected: $selectOption2) { selected in
-            selectOption2 = selected
+          PBSelect(
+            title: viewModel.selectTitle2,
+            options: viewModel.selectOptions2,
+            style: .default,
+            selected: $selectOption1) { selected in
+              selectOption1 = selected
           }
-
         }
         .padding()
 
         HStack(spacing: Spacing.large) {
           SingleSelectionView(
-            title: "How do you prefer to connect with your mentor?",
-            option1: "Weekly",
-            option2: "Bi-weekly",
-            option3: "Monthly"
+            title: viewModel.singleSelectionTitle1,
+            option1: viewModel.singleSelectionOptions1[0],
+            option2: viewModel.singleSelectionOptions1[1],
+            option3: viewModel.singleSelectionOptions1[2]
           )
           .frame(maxWidth: .infinity, alignment: .leading)
           SingleSelectionView(
-            title: "How do you prefer to connect with your mentor?",
-            option1: "Weekly",
-            option2: "Bi-weekly",
-            option3: "Monthly"
+            title: viewModel.singleSelectionTitle2,
+            option1: viewModel.singleSelectionOptions2[0],
+            option2: viewModel.singleSelectionOptions2[1],
+            option3: viewModel.singleSelectionOptions2[2]
           )
           .frame(maxWidth: .infinity, alignment: .leading)
         }
@@ -51,48 +57,48 @@ struct QuizView: View {
 
         HStack(spacing: Spacing.large) {
           MultiSelectionView(
-            title: "What kind of mentor vibe are you looking for?",
-            option1: "Cheerleader (motivating & encouraging)",
-            option2: "Challenger (pushes you to grow)",
-            option3: "Accountability partner"
+            title: viewModel.multiSelectionTitle1,
+            option1: viewModel.multiSelectionOptions1[0],
+            option2: viewModel.multiSelectionOptions1[1],
+            option3: viewModel.multiSelectionOptions1[2]
           )
           MultiSelectionView(
-            title: "What kind of mentor vibe are you looking for?",
-            option1: "Cheerleader (motivating & encouraging)",
-            option2: "Challenger (pushes you to grow)",
-            option3: "Accountability partner"
-          )
-        }
-        .padding()
-
-        HStack(spacing: Spacing.large) {
-          MultiSelectionView(
-            title: "What kind of mentor vibe are you looking for?",
-            option1: "Cheerleader (motivating & encouraging)",
-            option2: "Challenger (pushes you to grow)",
-            option3: "Accountability partner"
-          )
-          MultiSelectionView(
-            title: "What kind of mentor vibe are you looking for?",
-            option1: "Cheerleader (motivating & encouraging)",
-            option2: "Challenger (pushes you to grow)",
-            option3: "Accountability partner"
+            title: viewModel.multiSelectionTitle2,
+            option1: viewModel.multiSelectionOptions2[0],
+            option2: viewModel.multiSelectionOptions2[1],
+            option3: viewModel.multiSelectionOptions2[2]
           )
         }
         .padding()
 
         HStack(spacing: Spacing.large) {
           MultiSelectionView(
-            title: "What kind of mentor vibe are you looking for?",
-            option1: "Cheerleader (motivating & encouraging)",
-            option2: "Challenger (pushes you to grow)",
-            option3: "Accountability partner"
+            title: viewModel.multiSelectionTitle1,
+            option1: viewModel.multiSelectionOptions1[0],
+            option2: viewModel.multiSelectionOptions1[1],
+            option3: viewModel.multiSelectionOptions1[2]
           )
           MultiSelectionView(
-            title: "What kind of mentor vibe are you looking for?",
-            option1: "Cheerleader (motivating & encouraging)",
-            option2: "Challenger (pushes you to grow)",
-            option3: "Accountability partner"
+            title: viewModel.multiSelectionTitle2,
+            option1: viewModel.multiSelectionOptions2[0],
+            option2: viewModel.multiSelectionOptions2[1],
+            option3: viewModel.multiSelectionOptions2[2]
+          )
+        }
+        .padding()
+
+        HStack(spacing: Spacing.large) {
+          MultiSelectionView(
+            title: viewModel.multiSelectionTitle3,
+            option1: viewModel.multiSelectionOptions3[0],
+            option2: viewModel.multiSelectionOptions3[1],
+            option3: viewModel.multiSelectionOptions3[2]
+          )
+          MultiSelectionView(
+            title: viewModel.multiSelectionTitle4,
+            option1: viewModel.multiSelectionOptions4[0],
+            option2: viewModel.multiSelectionOptions4[1],
+            option3: viewModel.multiSelectionOptions4[2]
           )
         }
         .padding()
@@ -108,7 +114,7 @@ struct QuizView: View {
 
 #Preview {
   registerFonts()
-  return QuizView()
+  return QuizView(viewModel: MenteeViewModel())
 }
 
 
@@ -117,8 +123,3 @@ struct SelectOptions {
   let text: String
 }
 
-let options: [(value: String, text: String?)] = [
-  (value: "1", text: "Reading"),
-  (value: "2", text: "Speaking"),
-  (value: "3", text: "Watching Videos")
-]
