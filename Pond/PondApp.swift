@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct PondApp: App {
+  @StateObject var authManager = AuthManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          MainView().environmentObject(authManager)
         }
     }
 }

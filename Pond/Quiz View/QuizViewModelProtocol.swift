@@ -33,8 +33,37 @@ protocol QuizViewModelProtocol {
   var multiSelectionOptions4: [String] { get }
 }
 
-//@Observable
 class MenteeViewModel: QuizViewModelProtocol, ObservableObject {
+  var title: String = "Ready to level up? Your mentor quest starts here!"
+  var subtitle: String = "We’re excited to see all you accomplish! Next, let’s gather a few details about your areasof growth to ensure we find the perfect mentor for you."
+
+  var selectTitle1: String = "How do you usually learn best?"
+  var selectOptions1: [(value: String, text: String?)] = options
+
+  var selectTitle2: String = "How do you usually learn best?"
+  var selectOptions2: [(value: String, text: String?)] = options
+
+
+  var singleSelectionTitle1: String = "How do you prefer to connect with your mentor?"
+  var singleSelectionOptions1: [String] = ["Weekly", "Bi-weekly", "Monthly"]
+
+  var singleSelectionTitle2: String = "How do you prefer to connect with your mentor?"
+  var singleSelectionOptions2: [String] = ["Weekly", "Bi-weekly", "Monthly"]
+
+  var multiSelectionTitle1: String = "What kind of mentor vibe are you looking for?"
+  var multiSelectionOptions1: [String] = ["Cheerleader (motivating & encouraging)", "Challenger (pushes you to grow)", "Accountability partner"]
+
+  var multiSelectionTitle2: String = "What kind of mentor vibe are you looking for?"
+  var multiSelectionOptions2: [String] = ["Cheerleader (motivating & encouraging)", "Challenger (pushes you to grow)", "Accountability partner"]
+
+  var multiSelectionTitle3: String = "What kind of mentor vibe are you looking for?"
+  var multiSelectionOptions3: [String] = ["Cheerleader (motivating & encouraging)", "Challenger (pushes you to grow)", "Accountability partner"]
+
+  var multiSelectionTitle4: String = "What kind of mentor vibe are you looking for?"
+  var multiSelectionOptions4: [String] = ["Cheerleader (motivating & encouraging)", "Challenger (pushes you to grow)", "Accountability partner"]
+}
+
+class MentorViewModel: QuizViewModelProtocol, ObservableObject {
   var title: String = "Ready to level up? Your mentor quest starts here!"
   var subtitle: String = "We’re excited to see all you accomplish! Next, let’s gather a few details about your areasof growth to ensure we find the perfect mentor for you."
 

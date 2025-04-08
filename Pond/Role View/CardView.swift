@@ -11,6 +11,7 @@ import Playbook
 struct CardView: View {
   var imageName: String? = nil
   var cardText: String? = nil
+  
   var body: some View {
     PBCard(backgroundColor: Color.green.opacity(0.2), borderRadius: 10, highlight: .top(Color.green), style: .selected(type: .card), shadow: .deep, width: 300) {
       if let cardText = cardText {
