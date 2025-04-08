@@ -31,9 +31,13 @@ protocol QuizViewModelProtocol {
   var multiSelectionOptions3: [String] { get }
   var multiSelectionTitle4: String { get }
   var multiSelectionOptions4: [String] { get }
+
+  var path: Screen { get }
 }
 
 class MenteeViewModel: QuizViewModelProtocol, ObservableObject {
+  var path = Screen.dashboard
+
   var title: String = "Ready to level up? Your mentor quest starts here!"
   var subtitle: String = "We’re excited to see all you accomplish! Next, let’s gather a few details about your areasof growth to ensure we find the perfect mentor for you."
 
@@ -64,6 +68,8 @@ class MenteeViewModel: QuizViewModelProtocol, ObservableObject {
 }
 
 class MentorViewModel: QuizViewModelProtocol, ObservableObject {
+  var path = Screen.confirmation
+
   var title: String = "Ready to level up? Your mentor quest starts here!"
   var subtitle: String = "We’re excited to see all you accomplish! Next, let’s gather a few details about your areasof growth to ensure we find the perfect mentor for you."
 

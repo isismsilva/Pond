@@ -9,7 +9,7 @@ import SwiftUI
 import Playbook
 
 struct RoleView: View {
-  @Binding var path: NavigationPath
+  @EnvironmentObject private var navigation: NavigationViewModel
 
   var body: some View {
     VStack {
@@ -21,15 +21,13 @@ struct RoleView: View {
       HStack {
         CardView(imageName: "Mentee", cardText: "Sign up to find a mentor\n and to take your skills to the next level!")
           .onTapGesture {
-            path.append(Screen.menteeQuiz)
+            navigation.goToMenteeQuiz()
           }
         CardView(imageName: "Mentor", cardText: "Join a community of mentors making\n a difference.")
           .onTapGesture {
-            path.append(Screen.mentorQuiz)
+            navigation.goToMentorQuiz()
           }
-      }
-
-      
+      }      
     }
   }
 

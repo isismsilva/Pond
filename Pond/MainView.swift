@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct MainView: View {
-  @EnvironmentObject var authManager: AuthManager
-  @State private var path = NavigationPath()
+  @EnvironmentObject private var authManager: AuthManager
+  @EnvironmentObject private var navigation: NavigationViewModel
 
   var body: some View {
-    NavigationStack(path: $path) {
+    NavigationStack(path: $navigation.path) {
       VStack {
         Group {
           if authManager.isAuthenticated {
-            RoleView(path: $path)
+            RoleView()
           } else {
             LoginView()
           }
@@ -29,6 +29,10 @@ struct MainView: View {
             QuizView(viewModel: MentorViewModel())
           case .menteeQuiz:
             QuizView(viewModel: MenteeViewModel())
+          case .dashboard:
+            DashboardView()
+          case .confirmation:
+            ConfirmationView()
         }
       }
     }
@@ -43,4 +47,35 @@ struct MainView: View {
 enum Screen: Hashable, Equatable {
   case mentorQuiz
   case menteeQuiz
+  case dashboard
+  case confirmation
+}
+
+
+class NavigationViewModel: ObservableObject {
+  @Published var path = NavigationPath()
+  
+  func goToMenteeQuiz() {
+    path.append(Screen.menteeQuiz)
+  }
+  
+  func goToMentorQuiz() {
+    path.append(Screen.mentorQuiz)
+  }
+  
+  func goToDashboard() {
+    path.append(Screen.dashboard)
+  }
+  
+  func goToConfirmation() {
+    path.append(Screen.confirmation)
+  }
+  
+  func resetToRoot() {
+    path = NavigationPath()
+  }
+
+  func goTo(newPath: Screen) {
+    path.append(newPath)
+  }
 }

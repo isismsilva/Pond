@@ -12,6 +12,7 @@ struct QuizView<ViewModel: QuizViewModelProtocol>: View {
   @State private var selectOption1: String = "Choose an option"
   @State private var selectOption2: String = "Choose an option"
   @State var viewModel: ViewModel
+  @EnvironmentObject private var navigation: NavigationViewModel
 
   var body: some View {
     VStack(alignment: .leading) {
@@ -103,7 +104,9 @@ struct QuizView<ViewModel: QuizViewModelProtocol>: View {
         }
         .padding()
 
-        PBButton(fullWidth: true, title: "Finish")
+        PBButton(fullWidth: true, title: "Finish") {
+          navigation.goTo(newPath: viewModel.path)
+        }
           .padding(.top, 60)
           .padding(.horizontal, 300)
       }
@@ -112,10 +115,10 @@ struct QuizView<ViewModel: QuizViewModelProtocol>: View {
   }
 }
 
-#Preview {
-  registerFonts()
-  return QuizView(viewModel: MenteeViewModel())
-}
+//#Preview {
+//  registerFonts()
+//  return QuizView(viewModel: MenteeViewModel(), path: .constant())
+//}
 
 
 struct SelectOptions {
