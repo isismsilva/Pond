@@ -10,7 +10,7 @@ import Playbook
 
 struct DashboardView: View {
     var body: some View {
-      PBCard(backgroundColor: Color.green.opacity(0.2), borderRadius: 10, highlight: .top(Color.green), style: .selected(type: .card), shadow: .deep, width: 600) {
+      PBCard(backgroundColor: Color.green.opacity(0.2), borderRadius: 10, highlight: .top(Color.green), style: .selected(type: .card), shadow: .deep) {
         HeaderView(title: "Choose someone to grow with", subtitle: "Mentorship is about chemistry and growth. These mentors are here to support you—pick someone whose story or vibe speaks to you.")
         UserView(userName: "Ben Klang", imageName: "Ben", userTitle: "Vice President of Business Technology                 ", action: {})
 
@@ -24,6 +24,8 @@ struct DashboardView: View {
 
         UserView(userName: "Kelly Speier", imageName: "Kelly", userTitle: "Lead User Experience Designer                          ", action: {})
         }
+      .padding()
+      .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 

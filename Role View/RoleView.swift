@@ -13,6 +13,7 @@ struct RoleView: View {
         CardView(imageName: "Mentee", cardText: "Sign up to find a mentor\n and to take your skills to the next level!")
         CardView(imageName: "Mentor", cardText: "Join a community of mentors making\n a difference.")
       }
+      ChooseRoleView()
     }
 }
 

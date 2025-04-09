@@ -47,6 +47,7 @@ struct MentorView: View {
 
         }
       }
+      .frame(maxHeight: .infinity)
     }
 }
 

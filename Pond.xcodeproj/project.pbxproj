@@ -22,6 +22,7 @@
 		E72979212DA5B16B00DCA988 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72979062DA5B16B00DCA988 /* Preview Assets.xcassets */; };
 		E72979222DA5B16B00DCA988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E729790E2DA5B16B00DCA988 /* Assets.xcassets */; };
 		E72979242DA5B3CC00DCA988 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72979232DA5B3CB00DCA988 /* ButtonView.swift */; };
+		E72979262DA6C42000DCA988 /* ChooseRoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72979252DA6C42000DCA988 /* ChooseRoleView.swift */; };
 		E72E21D02DA5946F001BFE1E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72E21CD2DA5946F001BFE1E /* CardView.swift */; };
 		E72E21D12DA5946F001BFE1E /* RoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72E21CE2DA5946F001BFE1E /* RoleView.swift */; };
 		E7B9871B2DA56F5500BE6CE0 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B987172DA56F5500BE6CE0 /* BadgeView.swift */; };
@@ -46,6 +47,7 @@
 		E72979122DA5B16B00DCA988 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E72979132DA5B16B00DCA988 /* PondApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondApp.swift; sourceTree = "<group>"; };
 		E72979232DA5B3CB00DCA988 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		E72979252DA6C42000DCA988 /* ChooseRoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRoleView.swift; sourceTree = "<group>"; };
 		E72E21CD2DA5946F001BFE1E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		E72E21CE2DA5946F001BFE1E /* RoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleView.swift; sourceTree = "<group>"; };
 		E7B987172DA56F5500BE6CE0 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			children = (
 				E72E21CE2DA5946F001BFE1E /* RoleView.swift */,
 				E72E21CD2DA5946F001BFE1E /* CardView.swift */,
+				E72979252DA6C42000DCA988 /* ChooseRoleView.swift */,
 			);
 			path = "Role View";
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				E72E21D12DA5946F001BFE1E /* RoleView.swift in Sources */,
 				E7B9871C2DA56F5500BE6CE0 /* DashboardView.swift in Sources */,
 				E7B9871D2DA56F5500BE6CE0 /* UserView.swift in Sources */,
+				E72979262DA6C42000DCA988 /* ChooseRoleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
