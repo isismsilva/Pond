@@ -14,7 +14,10 @@ struct UserView: View {
   var userTerritory: String = "PHL"
   var userTitle: String = "Vice President of Business Technology"
   var displayAvatar: Bool = false
-
+  var showButton: Bool = true
+  var buttonText: String = "Check Availability"
+  let action: (() -> Void)?
+  
     var body: some View {
       HStack(alignment: .top) {
         PBAvatar(image: Image(imageName), size: .medium, status: .online, statusSize: .medium)
@@ -28,24 +31,27 @@ struct UserView: View {
           }
           .frame(maxWidth: .infinity, alignment: .leading)
         }
-        Button {
+        if showButton {
+          Button {
+            if let action = action {
+              action()
+            }
+          } label: {
+            Text(buttonText)
+              .foregroundStyle(Color(#colorLiteral(red: 0.07562058419, green: 0.6807038188, blue: 0.3597236872, alpha: 1)))
+              .pbFont(.buttonText(15))
+              .frame(width: 170, height: 35)
 
-        } label: {
-          Text("Check Availability")
-            .foregroundStyle(Color(#colorLiteral(red: 0.07562058419, green: 0.6807038188, blue: 0.3597236872, alpha: 1)))
-            .pbFont(.buttonText(15))
-            .frame(width: 170, height: 35)
 
-
+          }
+          .background(Color.green.opacity(0.2))
+          .clipShape(RoundedRectangle(cornerRadius: 8))
+          .padding(.top, 15)
         }
-
-        .background(Color.green.opacity(0.2))
-        .clipShape(RoundedRectangle(cornerRadius: 8))
-        .padding(.top, 15)
       }
     }
 }
 
 #Preview {
-    UserView()
+  UserView(action: {})
 }
