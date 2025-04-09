@@ -74,22 +74,6 @@ struct QuizView<ViewModel: QuizViewModelProtocol>: View {
 
         HStack(spacing: Spacing.large) {
           MultiSelectionView(
-            title: viewModel.multiSelectionTitle1,
-            option1: viewModel.multiSelectionOptions1[0],
-            option2: viewModel.multiSelectionOptions1[1],
-            option3: viewModel.multiSelectionOptions1[2]
-          )
-          MultiSelectionView(
-            title: viewModel.multiSelectionTitle2,
-            option1: viewModel.multiSelectionOptions2[0],
-            option2: viewModel.multiSelectionOptions2[1],
-            option3: viewModel.multiSelectionOptions2[2]
-          )
-        }
-        .padding()
-
-        HStack(spacing: Spacing.large) {
-          MultiSelectionView(
             title: viewModel.multiSelectionTitle3,
             option1: viewModel.multiSelectionOptions3[0],
             option2: viewModel.multiSelectionOptions3[1],
