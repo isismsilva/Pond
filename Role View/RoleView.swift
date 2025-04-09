@@ -12,32 +12,38 @@ struct RoleView: View {
   @EnvironmentObject private var navigation: NavigationViewModel
 
   var body: some View {
-    VStack {
+    VStack(alignment: .leading) {
       HeaderView(
         title: "Choose Your Carrear Path",
         subtitle: "Tell us what you want to grow!"
       )
-
-      HStack {
-        CardView(imageName: "Mentee", cardText: "Sign up to find a mentor\n and to take your skills to the next level!")
+      PBSectionSeparator()
+      ScrollView {
+        HStack(spacing: Spacing.medium) {
+          CardView(
+            title: "Mentee",
+            subtitle: "Sign up to find a mentor\n and to take your skills to the next level!",
+            image: "Mentee"
+          )
           .onTapGesture {
             navigation.goToMenteeQuiz()
           }
-        CardView(imageName: "Mentor", cardText: "Join a community of mentors making\n a difference.")
+          CardView(
+            title: "Mentor",
+            subtitle: "Join a community of mentors making\n a difference.",
+            image: "Mentor"
+          )
           .onTapGesture {
             navigation.goToMentorQuiz()
           }
-      }      
+        }
+      }
+      .padding()
     }
-  }
-
-  var buttonView: some View {
-    PBButton(fullWidth: true, variant: .primary, size: .large, shape: .primary, title: "Submit") {
-      
-    }
+    .padding()
   }
 }
 
 #Preview {
-//  RoleView(path: .constant(Screen.menteeQuiz.))
+  RoleView().environmentObject(NavigationViewModel())
 }
