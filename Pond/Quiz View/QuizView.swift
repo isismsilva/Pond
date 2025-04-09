@@ -32,8 +32,8 @@ struct QuizView<ViewModel: QuizViewModelProtocol>: View {
             title: viewModel.selectTitle2,
             options: viewModel.selectOptions2,
             style: .default,
-            selected: $selectOption1) { selected in
-              selectOption1 = selected
+            selected: $selectOption2) { selected in
+              selectOption2 = selected
           }
         }
         .padding()

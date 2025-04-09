@@ -8,6 +8,18 @@
 import SwiftUI
 import Playbook
 
+struct Mentor: Codable, Identifiable {
+  let id: Int
+  var userName: String
+  var imageName: String
+  var userTerritory: String
+  var userTitle: String
+  var displayAvatar: Bool
+}
+
+
+
+
 struct UserView: View {
   var userName: String = "Ben Klang"
   var imageName: String = "Ben"
@@ -22,7 +34,17 @@ struct UserView: View {
       HStack(alignment: .top) {
         PBAvatar(image: Image(imageName), size: .medium, status: .online, statusSize: .medium)
         VStack(alignment: .leading) {
-          PBUser(name: userName, nameFont: .init(font: .body, variant: .bold), image: Image(imageName), size: .medium, territory: userTerritory, title: userTitle, status: .online, displayAvatar: displayAvatar, territoryTitleFont: .subcaption)
+          PBUser(
+            name: userName,
+            nameFont: .init(font: .body, variant: .bold),
+            image: Image(imageName),
+            size: .medium,
+            territory: userTerritory,
+            title: userTitle,
+            status: .online,
+            displayAvatar: displayAvatar,
+            territoryTitleFont: .subcaption
+          )
           HStack {
             BadgeView(badgeText: "Accountability Partner")
             BadgeView(badgeText: "BT")

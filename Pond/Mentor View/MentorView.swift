@@ -9,19 +9,22 @@ import SwiftUI
 import Playbook
 
 struct MentorView: View {
-  private let name: String = "Jenny Gray"
-  private let imageName: String = "Jenny"
-  private let userTitle: String = "VP of Application Development and Infrastructure"
+  let id: Int
   @State private var bookNow: Bool = false
 
   var body: some View {
     VStack(alignment: .leading) {
+      HeaderView(title: "Mentor", subtitle: "")
+        .padding(.top)
+        .padding(.horizontal)
       ScrollView {
         PBCard(highlight: .top(.pbPrimary)) {
+          let mentor = mentors.first { $0.id == id }
+          if let mentor = mentor {
           UserView(
-            userName: name,
-            imageName: imageName,
-            userTitle: userTitle,
+            userName: mentor.userName,
+            imageName: mentor.imageName,
+            userTitle: mentor.userTitle,
             showButton: true,
             buttonText: "Book Now") {
               bookNow.toggle()
@@ -32,16 +35,17 @@ struct MentorView: View {
             .presentationMode(isPresented: $bookNow) {
               DialogView()
             }
+        }
           AboutView()
         }
-        .padding()
+        .padding(.horizontal)
       }
-      .padding()
+      .padding(.horizontal)
     }
     .background(Color.background(.light))
   }
 }
 
 #Preview {
-  MentorView()
+  MentorView(id: 1)
 }
