@@ -14,11 +14,9 @@ struct Mentor: Codable, Identifiable {
   var imageName: String
   var userTerritory: String
   var userTitle: String
+  var about: String
   var displayAvatar: Bool
 }
-
-
-
 
 struct UserView: View {
   var userName: String = "Ben Klang"
@@ -28,6 +26,7 @@ struct UserView: View {
   var displayAvatar: Bool = false
   var showButton: Bool = true
   var buttonText: String = "Check Availability"
+
   let action: (() -> Void)?
   
     var body: some View {
@@ -72,6 +71,8 @@ struct UserView: View {
       }
     }
 }
+
+
 
 #Preview {
   UserView(action: {})

@@ -19,7 +19,7 @@ struct MentorView: View {
         .padding(.horizontal)
       ScrollView {
         PBCard(highlight: .top(.pbPrimary)) {
-          let mentor = mentors.first { $0.id == id }
+          let mentor = Mocks.mentors.first { $0.id == id }
           if let mentor = mentor {
           UserView(
             userName: mentor.userName,
@@ -36,7 +36,12 @@ struct MentorView: View {
               DialogView()
             }
         }
-          AboutView()
+          if let mentor = mentor {
+            AboutView(
+              title: "About \(String(describing: mentor.userName))",
+              resume: mentor.about
+            )
+          }
         }
         .padding(.horizontal)
       }

@@ -114,6 +114,7 @@ class MentorViewModel: QuizViewModelProtocol, ObservableObject {
 
   var multiSelectionTitle4: String = "What personal strengths do you bring to mentoring?"
   var multiSelectionOptions4: [String] = ["Active listening", "Constructive feedback", "Strategic thinking", "Network building", "Technical expertise", "Industry insights"]
+
 }
 
 let options: [(value: String, text: String?)] = [

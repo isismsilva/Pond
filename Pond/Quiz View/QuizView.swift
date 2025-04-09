@@ -99,10 +99,10 @@ struct QuizView<ViewModel: QuizViewModelProtocol>: View {
   }
 }
 
-//#Preview {
-//  registerFonts()
-//  return QuizView(viewModel: MenteeViewModel(), path: .constant())
-//}
+#Preview {
+  registerFonts()
+  return QuizView(viewModel: MenteeViewModel())
+}
 
 
 struct SelectOptions {

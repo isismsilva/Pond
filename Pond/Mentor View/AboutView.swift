@@ -9,10 +9,8 @@ import SwiftUI
 import Playbook
 
 struct AboutView: View {
-  let title: String = "About Jenny"
-  let resume: String = """
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque  egestas, lorem sit amet faucibus pellentesque, lorem velit vehicula  nisl, vitae consequat elit ex at velit. Nulla vel rhoncus turpis.  Aliquam nec ante eget ex ultrices dictum. Aliquam nisl ex, ultricies ut  malesuada hendrerit, sodales eu sem. Morbi efficitur elit et dictum  rutrum. Sed non ullamcorper orci, ac bibendum nisl. Aenean egestas neque leo, vitae euismod nisi iaculis et. Phasellus vitae odio ac libero  porttitor condimentum nec vel mi. Nulla molestie, eros quis placerat  dapibus, nulla nunc pretium massa, ac placerat elit turpis sed enim.     
-           """
+  let title: String 
+  let resume: String
     var body: some View {
       VStack(alignment: .leading, spacing: Spacing.medium) {
         Text(title)
@@ -52,5 +50,5 @@ struct AboutView: View {
 }
 
 #Preview {
-    AboutView()
+  AboutView(title: "", resume: "")
 }

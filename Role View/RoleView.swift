@@ -14,7 +14,7 @@ struct RoleView: View {
   var body: some View {
     VStack(alignment: .leading) {
       HeaderView(
-        title: "Choose Your Carrear Path",
+        title: "Choose Your Career Path",
         subtitle: "Tell us what you want to grow!"
       )
       PBSectionSeparator()
