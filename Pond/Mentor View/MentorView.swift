@@ -16,28 +16,28 @@ struct MentorView: View {
 
   var body: some View {
     VStack(alignment: .leading) {
-      PBCard(highlight: .top(.pbPrimary)) {
-      UserView(
-        userName: name,
-        imageName: imageName,
-        userTitle: userTitle,
-        showButton: true,
-        buttonText: "Book Now") {
-          bookNow.toggle()
-        }
-        .globalPosition(alignment: .center, bottom: 70, trailing: 285, isCard: true) {
-          BadgeView(badgeText: "Top Rated")
-        }
-        .presentationMode(isPresented: $bookNow) {
-          DialogView()
-        }
       ScrollView {
-        AboutView()
+        PBCard(highlight: .top(.pbPrimary)) {
+          UserView(
+            userName: name,
+            imageName: imageName,
+            userTitle: userTitle,
+            showButton: true,
+            buttonText: "Book Now") {
+              bookNow.toggle()
+            }
+            .globalPosition(alignment: .center, bottom: 70, trailing: 285, isCard: true) {
+              BadgeView(badgeText: "Top Rated")
+            }
+            .presentationMode(isPresented: $bookNow) {
+              DialogView()
+            }
+          AboutView()
+        }
+        .padding()
       }
-    }
       .padding()
-  }
-    .padding()
+    }
     .background(Color.background(.light))
   }
 }
