@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct PondApp: App {
+  @StateObject private var authManager = AuthManager()
+  @StateObject private var navigation = NavigationViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+          MainView()
+            .environmentObject(authManager)
+            .environmentObject(navigation)
         }
     }
 }

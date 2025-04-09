@@ -21,13 +21,12 @@ struct UserView: View {
     var body: some View {
       HStack(alignment: .top) {
         PBAvatar(image: Image(imageName), size: .medium, status: .online, statusSize: .medium)
-        VStack {
+        VStack(alignment: .leading) {
           PBUser(name: userName, nameFont: .init(font: .body, variant: .bold), image: Image(imageName), size: .medium, territory: userTerritory, title: userTitle, status: .online, displayAvatar: displayAvatar, territoryTitleFont: .subcaption)
           HStack {
             BadgeView(badgeText: "Accountability Partner")
             BadgeView(badgeText: "BT")
             BadgeView(badgeText: "Leadeship Skills")
-
           }
           .frame(maxWidth: .infinity, alignment: .leading)
         }

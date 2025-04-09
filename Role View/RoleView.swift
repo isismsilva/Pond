@@ -7,16 +7,43 @@
 
 import SwiftUI
 import Playbook
+
 struct RoleView: View {
-    var body: some View {
-      HStack {
-        CardView(imageName: "Mentee", cardText: "Sign up to find a mentor\n and to take your skills to the next level!")
-        CardView(imageName: "Mentor", cardText: "Join a community of mentors making\n a difference.")
+  @EnvironmentObject private var navigation: NavigationViewModel
+
+  var body: some View {
+    VStack(alignment: .leading) {
+      HeaderView(
+        title: "Choose Your Carrear Path",
+        subtitle: "Tell us what you want to grow!"
+      )
+      PBSectionSeparator()
+      ScrollView {
+        HStack(spacing: Spacing.medium) {
+          CardView(
+            title: "Mentee",
+            subtitle: "Sign up to find a mentor\n and to take your skills to the next level!",
+            image: "Mentee"
+          )
+          .onTapGesture {
+            navigation.goToMenteeQuiz()
+          }
+          CardView(
+            title: "Mentor",
+            subtitle: "Join a community of mentors making\n a difference.",
+            image: "Mentor"
+          )
+          .onTapGesture {
+            navigation.goToMentorQuiz()
+          }
+        }
       }
-      ChooseRoleView()
+      .padding()
     }
+    .padding()
+  }
 }
 
 #Preview {
-    RoleView()
+  RoleView().environmentObject(NavigationViewModel())
 }

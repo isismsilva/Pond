@@ -9,24 +9,37 @@ import SwiftUI
 import Playbook
 
 struct CardView: View {
-  var imageName: String? = nil
-  var cardText: String? = nil
+  var title: String
+  var subtitle: String
+  var image: String
+
   var body: some View {
-    PBCard(backgroundColor: Color.green.opacity(0.2), borderRadius: 10, highlight: .top(Color.green), style: .selected(type: .card), shadow: .deep, width: 300) {
-      if let cardText = cardText {
-        Text(cardText)
-          .font(.headline)
-          .foregroundColor(.white)
-          .padding()
+    PBCard(
+      backgroundColor: Color.green.opacity(0.2),
+      borderRadius: 10,
+      highlight: .top(Color.green),
+      padding: .zero,
+      style: .selected(type: .card),
+      shadow: .deep,
+      width: nil
+    ) {
+      VStack(alignment: .leading, spacing: Spacing.xxSmall) {
+          Text(title)
+            .pbFont(.title1, variant: .bold)
+          Text(subtitle)
+            .pbFont(.body)
+          Image(image)
+            .resizable()
+            .scaledToFit()
+            .padding(.vertical, -42)
       }
-      if let imageName = imageName {
-        Image(imageName)
-          .frame(maxWidth: .infinity, alignment: .center)
-      }
+      .padding(.horizontal, Spacing.large)
+      .padding(.top, Spacing.large)
     }
   }
 }
 
 #Preview {
-  CardView(imageName: "Mentee")
+  registerFonts()
+  return CardView(title: "Mentee", subtitle: "Welcome to Pond", image: "Mentee")
 }
