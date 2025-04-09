@@ -9,47 +9,39 @@ import SwiftUI
 import Playbook
 
 struct MentorView: View {
+  private let name: String = "Jenny Gray"
+  private let imageName: String = "Jenny"
+  private let userTitle: String = "VP of Application Development and Infrastructure"
   @State private var bookNow: Bool = false
-  @State private var name: String = ""
-  @State private var email: String = ""
-  @State private var phone: String = ""
-  @Binding var message: String
-    var body: some View {
-      PBCard(backgroundColor: Color.green.opacity(0.2), borderRadius: 10, highlight: .top(Color.green), style: .selected(type: .card), shadow: .deep, width: 800) {
-        VStack(alignment: .leading) {
-          UserView(userName: "Jenny Gray", imageName: "Jenny", userTitle: "VP of Application Development and Infrastructure                                                                                                                  ", showButton: true, buttonText: "Book Now", action: {
-           bookNow.toggle()
-          })
-            .globalPosition(alignment: .center, bottom: 70, trailing: 285, isCard: true) {
-              BadgeView(badgeText: "Top Rated")
-            }
-            .presentationMode(isPresented: $bookNow) {
-                VStack{
-                    PBDialog(
-                        title: "Information",
-                        cancelButton: PBButton(title: "Cancel", customView: AnyView(ButtonView(action: {}))),
-                        confirmButton: PBButton(title: "Cancel"),
-                        content: ({
-                            Form {
-                            TextField("Your Name", text: $name)
-                            TextField("Your Email", text: $email)
-                              TextField("Your Phone Number", text: $phone)
-                              Group {
-                                PBTextArea("Message", text: $message, placeholder: "Your nessage here...", characterCount: .count)
-                              }
-                          }
-                        }))
-                    .backgroundViewModifier(alpha: 0.2)
-                }
 
-            }
-          AboutView()
-
+  var body: some View {
+    VStack(alignment: .leading) {
+      PBCard(highlight: .top(.pbPrimary)) {
+      UserView(
+        userName: name,
+        imageName: imageName,
+        userTitle: userTitle,
+        showButton: true,
+        buttonText: "Book Now") {
+          bookNow.toggle()
         }
+        .globalPosition(alignment: .center, bottom: 70, trailing: 285, isCard: true) {
+          BadgeView(badgeText: "Top Rated")
+        }
+        .presentationMode(isPresented: $bookNow) {
+          DialogView()
+        }
+      ScrollView {
+        AboutView()
       }
     }
+      .padding()
+  }
+    .padding()
+    .background(Color.background(.light))
+  }
 }
 
 #Preview {
-  MentorView(message: .constant("Hello!"))
+  MentorView()
 }

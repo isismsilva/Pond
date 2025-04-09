@@ -26,6 +26,10 @@ final class NavigationViewModel: ObservableObject {
     path.append(Screen.confirmation)
   }
 
+  func goToMentorPage() {
+    path.append(Screen.mentor)
+  }
+
   func resetToRoot() {
     path = NavigationPath()
   }
@@ -40,6 +44,7 @@ enum Screen: Hashable, Equatable {
   case menteeQuiz
   case dashboard
   case confirmation
+  case mentor
 
   @ViewBuilder
   var destination: some View {
@@ -52,6 +57,8 @@ enum Screen: Hashable, Equatable {
         DashboardView()
       case .confirmation:
         ConfirmationView()
+      case .mentor:
+        MentorView()
     }
   }
 }
