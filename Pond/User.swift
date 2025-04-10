@@ -18,9 +18,6 @@ class AuthManager: ObservableObject {
   @Published var isAuthenticated: Bool = false
 
   func login(username: String, password: String) {
-
-//    self.user = User(id: UUID(), username: username, password: password)
-//    self.isAuthenticated = true
     if !username.isEmpty && !password.isEmpty {
       self.user = User(id: UUID(), username: username, password: password)
       self.isAuthenticated = true

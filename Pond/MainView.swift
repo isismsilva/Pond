@@ -23,6 +23,7 @@ struct MainView: View {
         }
       }
       .padding()
+      .background(Color.background(.light))
       .navigationDestination(for: Screen.self) { $0.destination }
     }
   }

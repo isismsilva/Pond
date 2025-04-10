@@ -14,8 +14,6 @@
 		E71FFA742DA7FBDD00A5441E /* ReviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA592DA7FBDD00A5441E /* ReviewCardView.swift */; };
 		E71FFA752DA7FBDD00A5441E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA5D2DA7FBDD00A5441E /* QuizView.swift */; };
 		E71FFA762DA7FBDD00A5441E /* QuizViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA5E2DA7FBDD00A5441E /* QuizViewModelProtocol.swift */; };
-		E71FFA772DA7FBDD00A5441E /* MultiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA602DA7FBDD00A5441E /* MultiSelectionView.swift */; };
-		E71FFA782DA7FBDD00A5441E /* SingleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA612DA7FBDD00A5441E /* SingleSelectionView.swift */; };
 		E71FFA792DA7FBDD00A5441E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA642DA7FBDD00A5441E /* ButtonView.swift */; };
 		E71FFA7A2DA7FBDD00A5441E /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA652DA7FBDD00A5441E /* ConfirmationView.swift */; };
 		E71FFA7B2DA7FBDD00A5441E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA662DA7FBDD00A5441E /* ContentView.swift */; };
@@ -34,6 +32,8 @@
 		F97EB94D2DA6CBB700A8E9D7 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97EB94A2DA6CBB700A8E9D7 /* CardView.swift */; };
 		F97EB94E2DA6CBB700A8E9D7 /* RoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97EB94B2DA6CBB700A8E9D7 /* RoleView.swift */; };
 		F9EBD42B2DA465B0008059CA /* Playbook in Frameworks */ = {isa = PBXBuildFile; productRef = F9EBD42A2DA465B0008059CA /* Playbook */; };
+		F9EEC5802DA820BC000CB7F4 /* SingleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EEC57E2DA820BC000CB7F4 /* SingleSelectionView.swift */; };
+		F9EEC5812DA820BC000CB7F4 /* MultiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EEC57D2DA820BC000CB7F4 /* MultiSelectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +43,6 @@
 		E71FFA5B2DA7FBDD00A5441E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E71FFA5D2DA7FBDD00A5441E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		E71FFA5E2DA7FBDD00A5441E /* QuizViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModelProtocol.swift; sourceTree = "<group>"; };
-		E71FFA602DA7FBDD00A5441E /* MultiSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionView.swift; sourceTree = "<group>"; };
-		E71FFA612DA7FBDD00A5441E /* SingleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionView.swift; sourceTree = "<group>"; };
 		E71FFA632DA7FBDD00A5441E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E71FFA642DA7FBDD00A5441E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		E71FFA652DA7FBDD00A5441E /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
@@ -64,6 +62,8 @@
 		F97EB94A2DA6CBB700A8E9D7 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F97EB94B2DA6CBB700A8E9D7 /* RoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleView.swift; sourceTree = "<group>"; };
 		F9EBD4072DA45FB8008059CA /* Pond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pond.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9EEC57D2DA820BC000CB7F4 /* MultiSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionView.swift; sourceTree = "<group>"; };
+		F9EEC57E2DA820BC000CB7F4 /* SingleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,23 +105,14 @@
 			path = "Quiz View";
 			sourceTree = "<group>";
 		};
-		E71FFA622DA7FBDD00A5441E /* Selection View */ = {
-			isa = PBXGroup;
-			children = (
-				E71FFA602DA7FBDD00A5441E /* MultiSelectionView.swift */,
-				E71FFA612DA7FBDD00A5441E /* SingleSelectionView.swift */,
-			);
-			path = "Selection View";
-			sourceTree = "<group>";
-		};
 		E71FFA6F2DA7FBDD00A5441E /* Pond */ = {
 			isa = PBXGroup;
 			children = (
+				F9EEC57F2DA820BC000CB7F4 /* Selection View */,
 				E71FFA842DA7FBE600A5441E /* Metric View */,
 				E71FFA5A2DA7FBDD00A5441E /* Mentor View */,
 				E71FFA5C2DA7FBDD00A5441E /* Preview Content */,
 				E71FFA5F2DA7FBDD00A5441E /* Quiz View */,
-				E71FFA622DA7FBDD00A5441E /* Selection View */,
 				E71FFA632DA7FBDD00A5441E /* Assets.xcassets */,
 				E71FFA642DA7FBDD00A5441E /* ButtonView.swift */,
 				E71FFA652DA7FBDD00A5441E /* ConfirmationView.swift */,
@@ -181,6 +172,15 @@
 				F9EBD4072DA45FB8008059CA /* Pond.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F9EEC57F2DA820BC000CB7F4 /* Selection View */ = {
+			isa = PBXGroup;
+			children = (
+				F9EEC57D2DA820BC000CB7F4 /* MultiSelectionView.swift */,
+				F9EEC57E2DA820BC000CB7F4 /* SingleSelectionView.swift */,
+			);
+			path = "Selection View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,14 +266,14 @@
 				E71FFA742DA7FBDD00A5441E /* ReviewCardView.swift in Sources */,
 				E71FFA752DA7FBDD00A5441E /* QuizView.swift in Sources */,
 				E71FFA762DA7FBDD00A5441E /* QuizViewModelProtocol.swift in Sources */,
-				E71FFA772DA7FBDD00A5441E /* MultiSelectionView.swift in Sources */,
-				E71FFA782DA7FBDD00A5441E /* SingleSelectionView.swift in Sources */,
 				E71FFA792DA7FBDD00A5441E /* ButtonView.swift in Sources */,
 				E71FFA7A2DA7FBDD00A5441E /* ConfirmationView.swift in Sources */,
 				E71FFA862DA7FC4300A5441E /* MetricView.swift in Sources */,
 				E71FFA7B2DA7FBDD00A5441E /* ContentView.swift in Sources */,
 				E71FFA7C2DA7FBDD00A5441E /* DialogView.swift in Sources */,
 				E71FFA7D2DA7FBDD00A5441E /* HeaderView.swift in Sources */,
+				F9EEC5802DA820BC000CB7F4 /* SingleSelectionView.swift in Sources */,
+				F9EEC5812DA820BC000CB7F4 /* MultiSelectionView.swift in Sources */,
 				E71FFA7E2DA7FBDD00A5441E /* LoginView.swift in Sources */,
 				E71FFA7F2DA7FBDD00A5441E /* MainView.swift in Sources */,
 				E71FFA802DA7FBDD00A5441E /* Mocks.swift in Sources */,

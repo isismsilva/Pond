@@ -17,7 +17,8 @@ struct QuizView<ViewModel: QuizViewModelProtocol>: View {
   var body: some View {
     VStack(alignment: .leading) {
       HeaderView(title: viewModel.title, subtitle: viewModel.subtitle)
-
+        .padding(.top)
+        .padding(.horizontal)
       ScrollView {
         HStack(spacing: Spacing.large) {
           PBSelect(
@@ -74,22 +75,6 @@ struct QuizView<ViewModel: QuizViewModelProtocol>: View {
 
         HStack(spacing: Spacing.large) {
           MultiSelectionView(
-            title: viewModel.multiSelectionTitle1,
-            option1: viewModel.multiSelectionOptions1[0],
-            option2: viewModel.multiSelectionOptions1[1],
-            option3: viewModel.multiSelectionOptions1[2]
-          )
-          MultiSelectionView(
-            title: viewModel.multiSelectionTitle2,
-            option1: viewModel.multiSelectionOptions2[0],
-            option2: viewModel.multiSelectionOptions2[1],
-            option3: viewModel.multiSelectionOptions2[2]
-          )
-        }
-        .padding()
-
-        HStack(spacing: Spacing.large) {
-          MultiSelectionView(
             title: viewModel.multiSelectionTitle3,
             option1: viewModel.multiSelectionOptions3[0],
             option2: viewModel.multiSelectionOptions3[1],
@@ -110,15 +95,16 @@ struct QuizView<ViewModel: QuizViewModelProtocol>: View {
           .padding(.top, 60)
           .padding(.horizontal, 300)
       }
-      .padding()
+      .padding(.horizontal)
     }
+    .background(Color.background(.light))
   }
 }
 
-//#Preview {
-//  registerFonts()
-//  return QuizView(viewModel: MenteeViewModel(), path: .constant())
-//}
+#Preview {
+  registerFonts()
+  return QuizView(viewModel: MenteeViewModel())
+}
 
 
 struct SelectOptions {

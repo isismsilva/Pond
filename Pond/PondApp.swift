@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import Playbook
 
 @main
 struct PondApp: App {
   @StateObject private var authManager = AuthManager()
   @StateObject private var navigation = NavigationViewModel()
+
+  init() {
+    registerFonts()
+  }
     var body: some Scene {
         WindowGroup {
           MainView()

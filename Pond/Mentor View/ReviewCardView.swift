@@ -9,7 +9,12 @@ import SwiftUI
 import Playbook
 
 struct ReviewCardView: View {
-  let avatar: String? = nil
+  let avatar: String
+  let name: String
+  let role: String = "Manager of Application Development"
+  let review: String = """
+          Them has consistently demonstrated a strong work ethic, a positive attitude, and a high level of professionalism. They are a reliable team member who communicates effectively and contributes meaningfully to projects. [Name] is proactive in problem-solving, always willing to lend a hand, and brings great energy to the workplace. Their attention to detail and commitment to quality work make them a valuable asset to our team.
+          """
   let showHighlight: Bool
   let showText: Bool = false
   var body: some View {
@@ -24,16 +29,12 @@ struct ReviewCardView: View {
             ) {
               VStack(alignment: .center, spacing: 10) {
                 if showText {
-                  Text("""
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Pellentesque  pharetra quam ut diam accumsan aliquam. 
-              Quisque vel ultrices diam. Ut sit amet blandit ligula
-              """)
-                  .pbFont(.subcaption)
-                  .lineSpacing(6)
-                  .lineLimit(10)
-                  .multilineTextAlignment(.center)
-                  .frame(height: 175)
+                  Text(review)
+                    .pbFont(.subcaption)
+                    .lineSpacing(6)
+                    .lineLimit(10)
+                    .multilineTextAlignment(.center)
+                    .frame(height: 175)
                 }
                 PBAvatar(image: Image(avatar.description), name: avatar.description, size: .medium)
                   .frame(maxWidth: .infinity, alignment: .center)
@@ -57,5 +58,5 @@ struct ReviewCardView: View {
 }
 
 #Preview {
-  ReviewCardView(showHighlight: true)
+  ReviewCardView(avatar: "Caitie", name: "Catiei", showHighlight: true)
 }
