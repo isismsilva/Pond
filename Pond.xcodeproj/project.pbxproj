@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E71FFA702DA7FBDD00A5441E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71FFA5B2DA7FBDD00A5441E /* Preview Assets.xcassets */; };
+		E71FFA712DA7FBDD00A5441E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E71FFA632DA7FBDD00A5441E /* Assets.xcassets */; };
+		E71FFA722DA7FBDD00A5441E /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA572DA7FBDD00A5441E /* AboutView.swift */; };
+		E71FFA732DA7FBDD00A5441E /* MentorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA582DA7FBDD00A5441E /* MentorView.swift */; };
+		E71FFA742DA7FBDD00A5441E /* ReviewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA592DA7FBDD00A5441E /* ReviewCardView.swift */; };
+		E71FFA752DA7FBDD00A5441E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA5D2DA7FBDD00A5441E /* QuizView.swift */; };
+		E71FFA762DA7FBDD00A5441E /* QuizViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA5E2DA7FBDD00A5441E /* QuizViewModelProtocol.swift */; };
+		E71FFA772DA7FBDD00A5441E /* MultiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA602DA7FBDD00A5441E /* MultiSelectionView.swift */; };
+		E71FFA782DA7FBDD00A5441E /* SingleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA612DA7FBDD00A5441E /* SingleSelectionView.swift */; };
+		E71FFA792DA7FBDD00A5441E /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA642DA7FBDD00A5441E /* ButtonView.swift */; };
+		E71FFA7A2DA7FBDD00A5441E /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA652DA7FBDD00A5441E /* ConfirmationView.swift */; };
+		E71FFA7B2DA7FBDD00A5441E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA662DA7FBDD00A5441E /* ContentView.swift */; };
+		E71FFA7C2DA7FBDD00A5441E /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA672DA7FBDD00A5441E /* DialogView.swift */; };
+		E71FFA7D2DA7FBDD00A5441E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA682DA7FBDD00A5441E /* HeaderView.swift */; };
+		E71FFA7E2DA7FBDD00A5441E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA692DA7FBDD00A5441E /* LoginView.swift */; };
+		E71FFA7F2DA7FBDD00A5441E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA6A2DA7FBDD00A5441E /* MainView.swift */; };
+		E71FFA802DA7FBDD00A5441E /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA6B2DA7FBDD00A5441E /* Mocks.swift */; };
+		E71FFA812DA7FBDD00A5441E /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA6C2DA7FBDD00A5441E /* NavigationViewModel.swift */; };
+		E71FFA822DA7FBDD00A5441E /* PondApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA6D2DA7FBDD00A5441E /* PondApp.swift */; };
+		E71FFA832DA7FBDD00A5441E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA6E2DA7FBDD00A5441E /* User.swift */; };
+		E71FFA862DA7FC4300A5441E /* MetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA852DA7FC4300A5441E /* MetricView.swift */; };
 		E7B9871B2DA56F5500BE6CE0 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B987172DA56F5500BE6CE0 /* BadgeView.swift */; };
 		E7B9871C2DA56F5500BE6CE0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B987182DA56F5500BE6CE0 /* DashboardView.swift */; };
 		E7B9871D2DA56F5500BE6CE0 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B987192DA56F5500BE6CE0 /* UserView.swift */; };
@@ -16,6 +37,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E71FFA572DA7FBDD00A5441E /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		E71FFA582DA7FBDD00A5441E /* MentorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorView.swift; sourceTree = "<group>"; };
+		E71FFA592DA7FBDD00A5441E /* ReviewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCardView.swift; sourceTree = "<group>"; };
+		E71FFA5B2DA7FBDD00A5441E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E71FFA5D2DA7FBDD00A5441E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		E71FFA5E2DA7FBDD00A5441E /* QuizViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModelProtocol.swift; sourceTree = "<group>"; };
+		E71FFA602DA7FBDD00A5441E /* MultiSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionView.swift; sourceTree = "<group>"; };
+		E71FFA612DA7FBDD00A5441E /* SingleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionView.swift; sourceTree = "<group>"; };
+		E71FFA632DA7FBDD00A5441E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E71FFA642DA7FBDD00A5441E /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		E71FFA652DA7FBDD00A5441E /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		E71FFA662DA7FBDD00A5441E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E71FFA672DA7FBDD00A5441E /* DialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
+		E71FFA682DA7FBDD00A5441E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E71FFA692DA7FBDD00A5441E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E71FFA6A2DA7FBDD00A5441E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E71FFA6B2DA7FBDD00A5441E /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		E71FFA6C2DA7FBDD00A5441E /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
+		E71FFA6D2DA7FBDD00A5441E /* PondApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondApp.swift; sourceTree = "<group>"; };
+		E71FFA6E2DA7FBDD00A5441E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E71FFA852DA7FC4300A5441E /* MetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricView.swift; sourceTree = "<group>"; };
 		E7B987172DA56F5500BE6CE0 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		E7B987182DA56F5500BE6CE0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		E7B987192DA56F5500BE6CE0 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
@@ -23,14 +65,6 @@
 		F97EB94B2DA6CBB700A8E9D7 /* RoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleView.swift; sourceTree = "<group>"; };
 		F9EBD4072DA45FB8008059CA /* Pond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pond.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F9EBD4092DA45FB8008059CA /* Pond */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Pond;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F9EBD4042DA45FB8008059CA /* Frameworks */ = {
@@ -44,6 +78,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E71FFA5A2DA7FBDD00A5441E /* Mentor View */ = {
+			isa = PBXGroup;
+			children = (
+				E71FFA572DA7FBDD00A5441E /* AboutView.swift */,
+				E71FFA582DA7FBDD00A5441E /* MentorView.swift */,
+				E71FFA592DA7FBDD00A5441E /* ReviewCardView.swift */,
+			);
+			path = "Mentor View";
+			sourceTree = "<group>";
+		};
+		E71FFA5C2DA7FBDD00A5441E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E71FFA5B2DA7FBDD00A5441E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E71FFA5F2DA7FBDD00A5441E /* Quiz View */ = {
+			isa = PBXGroup;
+			children = (
+				E71FFA5D2DA7FBDD00A5441E /* QuizView.swift */,
+				E71FFA5E2DA7FBDD00A5441E /* QuizViewModelProtocol.swift */,
+			);
+			path = "Quiz View";
+			sourceTree = "<group>";
+		};
+		E71FFA622DA7FBDD00A5441E /* Selection View */ = {
+			isa = PBXGroup;
+			children = (
+				E71FFA602DA7FBDD00A5441E /* MultiSelectionView.swift */,
+				E71FFA612DA7FBDD00A5441E /* SingleSelectionView.swift */,
+			);
+			path = "Selection View";
+			sourceTree = "<group>";
+		};
+		E71FFA6F2DA7FBDD00A5441E /* Pond */ = {
+			isa = PBXGroup;
+			children = (
+				E71FFA842DA7FBE600A5441E /* Metric View */,
+				E71FFA5A2DA7FBDD00A5441E /* Mentor View */,
+				E71FFA5C2DA7FBDD00A5441E /* Preview Content */,
+				E71FFA5F2DA7FBDD00A5441E /* Quiz View */,
+				E71FFA622DA7FBDD00A5441E /* Selection View */,
+				E71FFA632DA7FBDD00A5441E /* Assets.xcassets */,
+				E71FFA642DA7FBDD00A5441E /* ButtonView.swift */,
+				E71FFA652DA7FBDD00A5441E /* ConfirmationView.swift */,
+				E71FFA662DA7FBDD00A5441E /* ContentView.swift */,
+				E71FFA672DA7FBDD00A5441E /* DialogView.swift */,
+				E71FFA682DA7FBDD00A5441E /* HeaderView.swift */,
+				E71FFA692DA7FBDD00A5441E /* LoginView.swift */,
+				E71FFA6A2DA7FBDD00A5441E /* MainView.swift */,
+				E71FFA6B2DA7FBDD00A5441E /* Mocks.swift */,
+				E71FFA6C2DA7FBDD00A5441E /* NavigationViewModel.swift */,
+				E71FFA6D2DA7FBDD00A5441E /* PondApp.swift */,
+				E71FFA6E2DA7FBDD00A5441E /* User.swift */,
+			);
+			path = Pond;
+			sourceTree = "<group>";
+		};
+		E71FFA842DA7FBE600A5441E /* Metric View */ = {
+			isa = PBXGroup;
+			children = (
+				E71FFA852DA7FC4300A5441E /* MetricView.swift */,
+			);
+			path = "Metric View";
+			sourceTree = "<group>";
+		};
 		E7B9871A2DA56F5500BE6CE0 /* Dashboard View */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,7 +168,7 @@
 		F9EBD3FE2DA45FB8008059CA = {
 			isa = PBXGroup;
 			children = (
-				F9EBD4092DA45FB8008059CA /* Pond */,
+				E71FFA6F2DA7FBDD00A5441E /* Pond */,
 				F97EB94C2DA6CBB700A8E9D7 /* Role View */,
 				E7B9871A2DA56F5500BE6CE0 /* Dashboard View */,
 				F9EBD4082DA45FB8008059CA /* Products */,
@@ -95,9 +197,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				F9EBD4092DA45FB8008059CA /* Pond */,
 			);
 			name = Pond;
 			packageProductDependencies = (
@@ -149,6 +248,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71FFA702DA7FBDD00A5441E /* Preview Assets.xcassets in Resources */,
+				E71FFA712DA7FBDD00A5441E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +261,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7B9871B2DA56F5500BE6CE0 /* BadgeView.swift in Sources */,
+				E71FFA722DA7FBDD00A5441E /* AboutView.swift in Sources */,
+				E71FFA732DA7FBDD00A5441E /* MentorView.swift in Sources */,
+				E71FFA742DA7FBDD00A5441E /* ReviewCardView.swift in Sources */,
+				E71FFA752DA7FBDD00A5441E /* QuizView.swift in Sources */,
+				E71FFA762DA7FBDD00A5441E /* QuizViewModelProtocol.swift in Sources */,
+				E71FFA772DA7FBDD00A5441E /* MultiSelectionView.swift in Sources */,
+				E71FFA782DA7FBDD00A5441E /* SingleSelectionView.swift in Sources */,
+				E71FFA792DA7FBDD00A5441E /* ButtonView.swift in Sources */,
+				E71FFA7A2DA7FBDD00A5441E /* ConfirmationView.swift in Sources */,
+				E71FFA862DA7FC4300A5441E /* MetricView.swift in Sources */,
+				E71FFA7B2DA7FBDD00A5441E /* ContentView.swift in Sources */,
+				E71FFA7C2DA7FBDD00A5441E /* DialogView.swift in Sources */,
+				E71FFA7D2DA7FBDD00A5441E /* HeaderView.swift in Sources */,
+				E71FFA7E2DA7FBDD00A5441E /* LoginView.swift in Sources */,
+				E71FFA7F2DA7FBDD00A5441E /* MainView.swift in Sources */,
+				E71FFA802DA7FBDD00A5441E /* Mocks.swift in Sources */,
+				E71FFA812DA7FBDD00A5441E /* NavigationViewModel.swift in Sources */,
+				E71FFA822DA7FBDD00A5441E /* PondApp.swift in Sources */,
+				E71FFA832DA7FBDD00A5441E /* User.swift in Sources */,
 				F97EB94D2DA6CBB700A8E9D7 /* CardView.swift in Sources */,
 				F97EB94E2DA6CBB700A8E9D7 /* RoleView.swift in Sources */,
 				E7B9871C2DA56F5500BE6CE0 /* DashboardView.swift in Sources */,

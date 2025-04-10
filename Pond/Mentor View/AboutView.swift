@@ -38,15 +38,9 @@ struct AboutView: View {
         Text("Reviews")
           .pbFont(.caption, variant: .bold, color: .pbPrimary)
           .padding(.bottom, Spacing.xSmall)
-        ScrollView(.horizontal) {
-          HStack(spacing: Spacing.small) {
-            ForEach(Mocks.avatars, id: \.self) { avatar in
-              ReviewCardView(avatar: avatar)
-            }
-          }
-          .scrollIndicators(.hidden)
-          .padding(.leading)
-          }
+
+        ReviewCardView(showHighlight: true)
+
       }
     }
 }

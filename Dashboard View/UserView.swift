@@ -28,6 +28,7 @@ struct UserView: View {
   var displayAvatar: Bool = false
   var showButton: Bool = true
   var buttonText: String = "Check Availability"
+  var showBadge: Bool = true
   let action: (() -> Void)?
   
     var body: some View {
@@ -45,12 +46,14 @@ struct UserView: View {
             displayAvatar: displayAvatar,
             territoryTitleFont: .subcaption
           )
-          HStack {
-            BadgeView(badgeText: "Accountability Partner")
-            BadgeView(badgeText: "BT")
-            BadgeView(badgeText: "Leadeship Skills")
+          if showBadge {
+            HStack {
+              BadgeView(badgeText: "Accountability Partner")
+              BadgeView(badgeText: "BT")
+              BadgeView(badgeText: "Leadeship Skills")
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
           }
-          .frame(maxWidth: .infinity, alignment: .leading)
         }
         if showButton {
           Button {
