@@ -26,6 +26,7 @@
 		E71FFA822DA7FBDD00A5441E /* PondApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA6D2DA7FBDD00A5441E /* PondApp.swift */; };
 		E71FFA832DA7FBDD00A5441E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA6E2DA7FBDD00A5441E /* User.swift */; };
 		E71FFA862DA7FC4300A5441E /* MetricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71FFA852DA7FC4300A5441E /* MetricView.swift */; };
+		E79746272DA82CA100E08FEB /* WelcomeBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79746262DA82CA100E08FEB /* WelcomeBackView.swift */; };
 		E7B9871B2DA56F5500BE6CE0 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B987172DA56F5500BE6CE0 /* BadgeView.swift */; };
 		E7B9871C2DA56F5500BE6CE0 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B987182DA56F5500BE6CE0 /* DashboardView.swift */; };
 		E7B9871D2DA56F5500BE6CE0 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B987192DA56F5500BE6CE0 /* UserView.swift */; };
@@ -57,6 +58,7 @@
 		E71FFA6D2DA7FBDD00A5441E /* PondApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PondApp.swift; sourceTree = "<group>"; };
 		E71FFA6E2DA7FBDD00A5441E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E71FFA852DA7FC4300A5441E /* MetricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricView.swift; sourceTree = "<group>"; };
+		E79746262DA82CA100E08FEB /* WelcomeBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeBackView.swift; sourceTree = "<group>"; };
 		E7B987172DA56F5500BE6CE0 /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		E7B987182DA56F5500BE6CE0 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		E7B987192DA56F5500BE6CE0 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		E71FFA6F2DA7FBDD00A5441E /* Pond */ = {
 			isa = PBXGroup;
 			children = (
+				E79746252DA82C9000E08FEB /* WelcomeBack */,
 				F9EEC5AE2DA82170000CB7F4 /* Model */,
 				F9EEC57F2DA820BC000CB7F4 /* Selection View */,
 				E71FFA842DA7FBE600A5441E /* Metric View */,
@@ -136,6 +139,14 @@
 				E71FFA852DA7FC4300A5441E /* MetricView.swift */,
 			);
 			path = "Metric View";
+			sourceTree = "<group>";
+		};
+		E79746252DA82C9000E08FEB /* WelcomeBack */ = {
+			isa = PBXGroup;
+			children = (
+				E79746262DA82CA100E08FEB /* WelcomeBackView.swift */,
+			);
+			path = WelcomeBack;
 			sourceTree = "<group>";
 		};
 		E7B9871A2DA56F5500BE6CE0 /* Dashboard View */ = {
@@ -287,6 +298,7 @@
 				F9EEC5812DA820BC000CB7F4 /* MultiSelectionView.swift in Sources */,
 				E71FFA7E2DA7FBDD00A5441E /* LoginView.swift in Sources */,
 				E71FFA7F2DA7FBDD00A5441E /* MainView.swift in Sources */,
+				E79746272DA82CA100E08FEB /* WelcomeBackView.swift in Sources */,
 				E71FFA802DA7FBDD00A5441E /* Mocks.swift in Sources */,
 				E71FFA812DA7FBDD00A5441E /* NavigationViewModel.swift in Sources */,
 				E71FFA822DA7FBDD00A5441E /* PondApp.swift in Sources */,
