@@ -17,7 +17,8 @@ struct QuizView<ViewModel: QuizViewModelProtocol>: View {
   var body: some View {
     VStack(alignment: .leading) {
       HeaderView(title: viewModel.title, subtitle: viewModel.subtitle)
-
+        .padding(.top)
+        .padding(.horizontal)
       ScrollView {
         HStack(spacing: Spacing.large) {
           PBSelect(
@@ -94,8 +95,9 @@ struct QuizView<ViewModel: QuizViewModelProtocol>: View {
           .padding(.top, 60)
           .padding(.horizontal, 300)
       }
-      .padding()
+      .padding(.horizontal)
     }
+    .background(Color.background(.light))
   }
 }
 

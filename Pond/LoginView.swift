@@ -22,16 +22,16 @@ struct LoginView: View {
 extension LoginView {
   var loginView: some View {
     ZStack {
-      Color.background(.default).ignoresSafeArea()
+      Color.clear
       VStack(spacing: 100) {
         logoView
-        inputView
+        inputView.frame(width: 400)
         VStack {
           buttonView
           forgotPasswordView
         }
+        .frame(width: 400)
       }
-      .padding()
     }
   }
 

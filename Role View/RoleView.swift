@@ -17,6 +17,8 @@ struct RoleView: View {
         title: "Choose Your Career Path",
         subtitle: "Tell us what you want to grow!"
       )
+      .padding(.top)
+      .padding(.horizontal)
       PBSectionSeparator()
       ScrollView {
         HStack(spacing: Spacing.medium) {
@@ -38,9 +40,9 @@ struct RoleView: View {
           }
         }
       }
-      .padding()
+      .padding(.horizontal)
     }
-    .padding()
+    .background(Color.background(.light))
   }
 }
 

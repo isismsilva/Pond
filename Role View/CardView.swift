@@ -15,11 +15,11 @@ struct CardView: View {
 
   var body: some View {
     PBCard(
-      backgroundColor: Color.green.opacity(0.2),
+      backgroundColor: Color.card,
       borderRadius: 10,
       highlight: .top(Color.green),
       padding: .zero,
-      style: .selected(type: .card),
+      style: .default,
       shadow: .deep,
       width: nil
     ) {

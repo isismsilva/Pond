@@ -29,12 +29,10 @@ struct MentorView: View {
             buttonText: "Book Now") {
               bookNow.toggle()
             }
-            .globalPosition(alignment: .center, bottom: 70, trailing: 285, isCard: true) {
-              BadgeView(badgeText: "Top Rated")
-            }
             .presentationMode(isPresented: $bookNow) {
               DialogView()
             }
+            .padding(.bottom, -Spacing.xLarge)
         }
           if let mentor = mentor {
             AboutView(

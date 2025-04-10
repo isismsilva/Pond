@@ -16,12 +16,11 @@ struct DashboardView: View {
         title: "Choose someone to grow with",
         subtitle: "Mentorship is about chemistry and growth. These mentors are here to support you—pick someone whose story or vibe speaks to you."
       )
-        .padding()
+      .padding(.top)
+      .padding(.horizontal)
       ScrollView {
         PBCard(highlight: .top(.pbPrimary)) {
-
           ForEach(Mocks.mentors, id: \.id) { mentor in
-
             UserView(
               userName: mentor.userName,
               imageName: mentor.imageName,

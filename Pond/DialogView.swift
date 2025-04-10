@@ -14,6 +14,10 @@ struct DialogView: View {
   @State private var email: String = ""
   @State private var phone: String = ""
   @State private var message: String = ""
+
+  init() {
+    UIView.setAnimationsEnabled(false)
+  }
   var body: some View {
     PBDialog(
       title: "Information",
