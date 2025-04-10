@@ -13,43 +13,56 @@ struct MetricView: View {
   @EnvironmentObject var user: AuthManager
 
   var body: some View {
-    PBCard(borderRadius: 5, highlight: .top(.green), style: .default) {
-      if let user = user.user {
-        UserView(
-          userName: "Welcome Back, \(user.username)",
-          imageName: user.username, userTerritory: "PHL",
-          userTitle: "Vice President of Application Development",
-          showButton: false,
-          showBadge: false) {}
-      }
-      VStack {
-        PBNav(
-          selected: $selected,
-          variant: .subtle,
-          orientation: .horizontal,
-          title: "",
-          borders: false,
-          highlight: false
-        ) {
-          PBNavItem("Overview")
-          PBNavItem("Mentees")
-          PBNavItem("Workflows")
-          PBNavItem("Calendar")
-          PBNavItem("Action Items")
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
+    VStack(alignment: .leading) {
+      HeaderView(
+        title: "Check your Mentorship Metrics",
+        subtitle: "Mentorship is about chemistry and growth. These mentors are here to support you—pick someone whose story or vibe speaks to you."
+      )
+      .padding(.top)
+      .padding(.horizontal)
+      ScrollView {
+        PBCard(borderRadius: 5, highlight: .top(.pbPrimary), style: .default) {
+          if let user = user.user {
+            UserView(
+              userName: "Welcome Back, \(user.username)",
+              imageName: "Jenny",
+              userTerritory: "PHL",
+              userTitle: "Vice President of Application Development",
+              showButton: false,
+              showBadge: false) {}
+          }
+          VStack {
+            PBNav(
+              selected: $selected,
+              variant: .subtle,
+              orientation: .horizontal,
+              title: "",
+              borders: false,
+              highlight: false
+            ) {
+              PBNavItem("Overview")
+              PBNavItem("Mentees")
+              PBNavItem("Workflows")
+              PBNavItem("Calendar")
+              PBNavItem("Action Items")
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
 
-        PBCard(borderRadius: 5, highlight: .top(.green), style: .default) {
-          destinationView
-        }
-        .padding(.bottom, 25)
+            PBCard(borderRadius: 5, highlight: .top(.green), style: .default) {
+              destinationView
+            }
+            .padding(.bottom, 25)
 
-        Text("Pending Mentees")
-          .pbFont(.caption)
-          .frame(maxWidth: .infinity, alignment: .leading)
-        ReviewCardView(showHighlight: false)
+            Text("Pending Mentees")
+              .pbFont(.caption)
+              .frame(maxWidth: .infinity, alignment: .leading)
+            ReviewCardView(showHighlight: false)
+          }
+        }
       }
+      .padding(.horizontal)
     }
+    .background(Color.background(.light))
   }
 
   @ViewBuilder
@@ -114,5 +127,5 @@ enum DestionationView: String, CaseIterable {
 }
 
 #Preview {
-    MetricView()
+  MetricView().environmentObject(AuthManager())
 }
