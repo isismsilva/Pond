@@ -8,18 +8,6 @@
 import SwiftUI
 import Playbook
 
-struct Mentor: Codable, Identifiable {
-  let id: Int
-  var userName: String
-  var imageName: String
-  var userTerritory: String
-  var userTitle: String
-  var displayAvatar: Bool
-}
-
-
-
-
 struct UserView: View {
   var userName: String = "Ben Klang"
   var imageName: String = "Ben"

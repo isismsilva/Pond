@@ -77,7 +77,7 @@ class MenteeViewModel: QuizViewModelProtocol, ObservableObject {
 }
 
 class MentorViewModel: QuizViewModelProtocol, ObservableObject {
-  var path = Screen.confirmation
+  var path = Screen.metrics
 
   var title: String = "Ready to share your wisdom? Your mentoring journey starts here!"
   var subtitle: String = "We're excited to see the impact you'll make! Next, let's gather a few details about your expertise to ensure we find mentees who will benefit most from your guidance."

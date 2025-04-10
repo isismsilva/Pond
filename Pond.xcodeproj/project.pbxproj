@@ -34,6 +34,7 @@
 		F9EBD42B2DA465B0008059CA /* Playbook in Frameworks */ = {isa = PBXBuildFile; productRef = F9EBD42A2DA465B0008059CA /* Playbook */; };
 		F9EEC5802DA820BC000CB7F4 /* SingleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EEC57E2DA820BC000CB7F4 /* SingleSelectionView.swift */; };
 		F9EEC5812DA820BC000CB7F4 /* MultiSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EEC57D2DA820BC000CB7F4 /* MultiSelectionView.swift */; };
+		F9EEC5B02DA82185000CB7F4 /* Mentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EEC5AF2DA82185000CB7F4 /* Mentor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		F9EBD4072DA45FB8008059CA /* Pond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pond.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9EEC57D2DA820BC000CB7F4 /* MultiSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionView.swift; sourceTree = "<group>"; };
 		F9EEC57E2DA820BC000CB7F4 /* SingleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionView.swift; sourceTree = "<group>"; };
+		F9EEC5AF2DA82185000CB7F4 /* Mentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		E71FFA6F2DA7FBDD00A5441E /* Pond */ = {
 			isa = PBXGroup;
 			children = (
+				F9EEC5AE2DA82170000CB7F4 /* Model */,
 				F9EEC57F2DA820BC000CB7F4 /* Selection View */,
 				E71FFA842DA7FBE600A5441E /* Metric View */,
 				E71FFA5A2DA7FBDD00A5441E /* Mentor View */,
@@ -122,9 +125,7 @@
 				E71FFA692DA7FBDD00A5441E /* LoginView.swift */,
 				E71FFA6A2DA7FBDD00A5441E /* MainView.swift */,
 				E71FFA6B2DA7FBDD00A5441E /* Mocks.swift */,
-				E71FFA6C2DA7FBDD00A5441E /* NavigationViewModel.swift */,
 				E71FFA6D2DA7FBDD00A5441E /* PondApp.swift */,
-				E71FFA6E2DA7FBDD00A5441E /* User.swift */,
 			);
 			path = Pond;
 			sourceTree = "<group>";
@@ -181,6 +182,16 @@
 				F9EEC57E2DA820BC000CB7F4 /* SingleSelectionView.swift */,
 			);
 			path = "Selection View";
+			sourceTree = "<group>";
+		};
+		F9EEC5AE2DA82170000CB7F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E71FFA6E2DA7FBDD00A5441E /* User.swift */,
+				F9EEC5AF2DA82185000CB7F4 /* Mentor.swift */,
+				E71FFA6C2DA7FBDD00A5441E /* NavigationViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 				E71FFA802DA7FBDD00A5441E /* Mocks.swift in Sources */,
 				E71FFA812DA7FBDD00A5441E /* NavigationViewModel.swift in Sources */,
 				E71FFA822DA7FBDD00A5441E /* PondApp.swift in Sources */,
+				F9EEC5B02DA82185000CB7F4 /* Mentor.swift in Sources */,
 				E71FFA832DA7FBDD00A5441E /* User.swift in Sources */,
 				F97EB94D2DA6CBB700A8E9D7 /* CardView.swift in Sources */,
 				F97EB94E2DA6CBB700A8E9D7 /* RoleView.swift in Sources */,

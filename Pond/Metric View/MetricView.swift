@@ -10,30 +10,36 @@ import Playbook
 
 struct MetricView: View {
   @State var selected: Int = 0
+  @EnvironmentObject var user: AuthManager
+
   var body: some View {
     PBCard(borderRadius: 5, highlight: .top(.green), style: .default) {
-      UserView(userName: "Welcome Back, Jenny", imageName: "Jenny", userTerritory: "PHL", userTitle: "Vice President of Application Development", showButton: false,   showBadge: false) {}
-      VStack {
-
-      PBNav(
-        selected: $selected,
-        variant: .subtle,
-        orientation: .horizontal,
-        title: "",
-        borders: false,
-        highlight: false
-      ) {
-        PBNavItem("Overview")
-        PBNavItem("Mentees")
-        PBNavItem("Workflows")
-        PBNavItem("Calendar")
-        PBNavItem("Action Items")
+      if let user = user.user {
+        UserView(
+          userName: "Welcome Back, \(user.username)",
+          imageName: user.username, userTerritory: "PHL",
+          userTitle: "Vice President of Application Development",
+          showButton: false,
+          showBadge: false) {}
       }
-      .frame(maxWidth: .infinity, alignment: .leading)
-
+      VStack {
+        PBNav(
+          selected: $selected,
+          variant: .subtle,
+          orientation: .horizontal,
+          title: "",
+          borders: false,
+          highlight: false
+        ) {
+          PBNavItem("Overview")
+          PBNavItem("Mentees")
+          PBNavItem("Workflows")
+          PBNavItem("Calendar")
+          PBNavItem("Action Items")
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
 
         PBCard(borderRadius: 5, highlight: .top(.green), style: .default) {
-
           destinationView
         }
         .padding(.bottom, 25)
@@ -41,9 +47,8 @@ struct MetricView: View {
         Text("Pending Mentees")
           .pbFont(.caption)
           .frame(maxWidth: .infinity, alignment: .leading)
-
         ReviewCardView(showHighlight: false)
-    }
+      }
     }
   }
 
